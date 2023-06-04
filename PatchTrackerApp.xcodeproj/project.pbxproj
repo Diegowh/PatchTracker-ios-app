@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F14539E22A2D2E6F008405EC /* PatchTrackerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14539E12A2D2E6F008405EC /* PatchTrackerAppApp.swift */; };
+		F14539E42A2D2E6F008405EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14539E32A2D2E6F008405EC /* ContentView.swift */; };
+		F14539E62A2D2E70008405EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14539E52A2D2E70008405EC /* Assets.xcassets */; };
+		F14539E92A2D2E70008405EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14539E82A2D2E70008405EC /* Preview Assets.xcassets */; };
+		F14539F32A2D2E70008405EC /* PatchTrackerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14539F22A2D2E70008405EC /* PatchTrackerAppTests.swift */; };
+		F14539FD2A2D2E70008405EC /* PatchTrackerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14539FC2A2D2E70008405EC /* PatchTrackerAppUITests.swift */; };
+		F14539FF2A2D2E70008405EC /* PatchTrackerAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14539FE2A2D2E70008405EC /* PatchTrackerAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F14539EF2A2D2E70008405EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14539D62A2D2E6F008405EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F14539DD2A2D2E6F008405EC;
+			remoteInfo = PatchTrackerApp;
+		};
+		F14539F92A2D2E70008405EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14539D62A2D2E6F008405EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F14539DD2A2D2E6F008405EC;
+			remoteInfo = PatchTrackerApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F14539DE2A2D2E6F008405EC /* PatchTrackerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatchTrackerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F14539E12A2D2E6F008405EC /* PatchTrackerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchTrackerAppApp.swift; sourceTree = "<group>"; };
+		F14539E32A2D2E6F008405EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F14539E52A2D2E70008405EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F14539E82A2D2E70008405EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F14539EE2A2D2E70008405EC /* PatchTrackerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatchTrackerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F14539F22A2D2E70008405EC /* PatchTrackerAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchTrackerAppTests.swift; sourceTree = "<group>"; };
+		F14539F82A2D2E70008405EC /* PatchTrackerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatchTrackerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F14539FC2A2D2E70008405EC /* PatchTrackerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchTrackerAppUITests.swift; sourceTree = "<group>"; };
+		F14539FE2A2D2E70008405EC /* PatchTrackerAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchTrackerAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F14539DB2A2D2E6F008405EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F14539EB2A2D2E70008405EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F14539F52A2D2E70008405EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F14539D52A2D2E6F008405EC = {
+			isa = PBXGroup;
+			children = (
+				F14539E02A2D2E6F008405EC /* PatchTrackerApp */,
+				F14539F12A2D2E70008405EC /* PatchTrackerAppTests */,
+				F14539FB2A2D2E70008405EC /* PatchTrackerAppUITests */,
+				F14539DF2A2D2E6F008405EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F14539DF2A2D2E6F008405EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F14539DE2A2D2E6F008405EC /* PatchTrackerApp.app */,
+				F14539EE2A2D2E70008405EC /* PatchTrackerAppTests.xctest */,
+				F14539F82A2D2E70008405EC /* PatchTrackerAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F14539E02A2D2E6F008405EC /* PatchTrackerApp */ = {
+			isa = PBXGroup;
+			children = (
+				F14539E12A2D2E6F008405EC /* PatchTrackerAppApp.swift */,
+				F14539E32A2D2E6F008405EC /* ContentView.swift */,
+				F14539E52A2D2E70008405EC /* Assets.xcassets */,
+				F14539E72A2D2E70008405EC /* Preview Content */,
+			);
+			path = PatchTrackerApp;
+			sourceTree = "<group>";
+		};
+		F14539E72A2D2E70008405EC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F14539E82A2D2E70008405EC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F14539F12A2D2E70008405EC /* PatchTrackerAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F14539F22A2D2E70008405EC /* PatchTrackerAppTests.swift */,
+			);
+			path = PatchTrackerAppTests;
+			sourceTree = "<group>";
+		};
+		F14539FB2A2D2E70008405EC /* PatchTrackerAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F14539FC2A2D2E70008405EC /* PatchTrackerAppUITests.swift */,
+				F14539FE2A2D2E70008405EC /* PatchTrackerAppUITestsLaunchTests.swift */,
+			);
+			path = PatchTrackerAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F14539DD2A2D2E6F008405EC /* PatchTrackerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1453A022A2D2E70008405EC /* Build configuration list for PBXNativeTarget "PatchTrackerApp" */;
+			buildPhases = (
+				F14539DA2A2D2E6F008405EC /* Sources */,
+				F14539DB2A2D2E6F008405EC /* Frameworks */,
+				F14539DC2A2D2E6F008405EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PatchTrackerApp;
+			productName = PatchTrackerApp;
+			productReference = F14539DE2A2D2E6F008405EC /* PatchTrackerApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F14539ED2A2D2E70008405EC /* PatchTrackerAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1453A052A2D2E70008405EC /* Build configuration list for PBXNativeTarget "PatchTrackerAppTests" */;
+			buildPhases = (
+				F14539EA2A2D2E70008405EC /* Sources */,
+				F14539EB2A2D2E70008405EC /* Frameworks */,
+				F14539EC2A2D2E70008405EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F14539F02A2D2E70008405EC /* PBXTargetDependency */,
+			);
+			name = PatchTrackerAppTests;
+			productName = PatchTrackerAppTests;
+			productReference = F14539EE2A2D2E70008405EC /* PatchTrackerAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F14539F72A2D2E70008405EC /* PatchTrackerAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1453A082A2D2E70008405EC /* Build configuration list for PBXNativeTarget "PatchTrackerAppUITests" */;
+			buildPhases = (
+				F14539F42A2D2E70008405EC /* Sources */,
+				F14539F52A2D2E70008405EC /* Frameworks */,
+				F14539F62A2D2E70008405EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F14539FA2A2D2E70008405EC /* PBXTargetDependency */,
+			);
+			name = PatchTrackerAppUITests;
+			productName = PatchTrackerAppUITests;
+			productReference = F14539F82A2D2E70008405EC /* PatchTrackerAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F14539D62A2D2E6F008405EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F14539DD2A2D2E6F008405EC = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					F14539ED2A2D2E70008405EC = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = F14539DD2A2D2E6F008405EC;
+					};
+					F14539F72A2D2E70008405EC = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = F14539DD2A2D2E6F008405EC;
+					};
+				};
+			};
+			buildConfigurationList = F14539D92A2D2E6F008405EC /* Build configuration list for PBXProject "PatchTrackerApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F14539D52A2D2E6F008405EC;
+			productRefGroup = F14539DF2A2D2E6F008405EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F14539DD2A2D2E6F008405EC /* PatchTrackerApp */,
+				F14539ED2A2D2E70008405EC /* PatchTrackerAppTests */,
+				F14539F72A2D2E70008405EC /* PatchTrackerAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F14539DC2A2D2E6F008405EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F14539E92A2D2E70008405EC /* Preview Assets.xcassets in Resources */,
+				F14539E62A2D2E70008405EC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F14539EC2A2D2E70008405EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F14539F62A2D2E70008405EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F14539DA2A2D2E6F008405EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F14539E42A2D2E6F008405EC /* ContentView.swift in Sources */,
+				F14539E22A2D2E6F008405EC /* PatchTrackerAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F14539EA2A2D2E70008405EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F14539F32A2D2E70008405EC /* PatchTrackerAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F14539F42A2D2E70008405EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F14539FF2A2D2E70008405EC /* PatchTrackerAppUITestsLaunchTests.swift in Sources */,
+				F14539FD2A2D2E70008405EC /* PatchTrackerAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F14539F02A2D2E70008405EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F14539DD2A2D2E6F008405EC /* PatchTrackerApp */;
+			targetProxy = F14539EF2A2D2E70008405EC /* PBXContainerItemProxy */;
+		};
+		F14539FA2A2D2E70008405EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F14539DD2A2D2E6F008405EC /* PatchTrackerApp */;
+			targetProxy = F14539F92A2D2E70008405EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F1453A002A2D2E70008405EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1453A012A2D2E70008405EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1453A032A2D2E70008405EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PatchTrackerApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DiegoWH.PatchTrackerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1453A042A2D2E70008405EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PatchTrackerApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DiegoWH.PatchTrackerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F1453A062A2D2E70008405EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DiegoWH.PatchTrackerAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PatchTrackerApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PatchTrackerApp";
+			};
+			name = Debug;
+		};
+		F1453A072A2D2E70008405EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DiegoWH.PatchTrackerAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PatchTrackerApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PatchTrackerApp";
+			};
+			name = Release;
+		};
+		F1453A092A2D2E70008405EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DiegoWH.PatchTrackerAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PatchTrackerApp;
+			};
+			name = Debug;
+		};
+		F1453A0A2A2D2E70008405EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DiegoWH.PatchTrackerAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PatchTrackerApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F14539D92A2D2E6F008405EC /* Build configuration list for PBXProject "PatchTrackerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1453A002A2D2E70008405EC /* Debug */,
+				F1453A012A2D2E70008405EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1453A022A2D2E70008405EC /* Build configuration list for PBXNativeTarget "PatchTrackerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1453A032A2D2E70008405EC /* Debug */,
+				F1453A042A2D2E70008405EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1453A052A2D2E70008405EC /* Build configuration list for PBXNativeTarget "PatchTrackerAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1453A062A2D2E70008405EC /* Debug */,
+				F1453A072A2D2E70008405EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1453A082A2D2E70008405EC /* Build configuration list for PBXNativeTarget "PatchTrackerAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1453A092A2D2E70008405EC /* Debug */,
+				F1453A0A2A2D2E70008405EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F14539D62A2D2E6F008405EC /* Project object */;
+}
