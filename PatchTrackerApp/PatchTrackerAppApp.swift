@@ -11,7 +11,7 @@ import SwiftUI
 struct PatchTrackerAppApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            EpisodeListView()
         }
     }
 }
