@@ -29,7 +29,7 @@ The design of the app is still in its early stages and is subject to changes.
 ```
 git clone https://github.com/Diegowh/PatchTracker-ios-app.git
 ```
-3. Setup the `Config.plist` file: There is a `Config.example.plist` file in the repository. Use this file as a reference to create your own `COnfig.plist` file. Replace the placeholder values in your new `Config.plist` file with the actual endpoints of the backend API.
+3. Setup the `Config.plist` file: There is a `Config.example.plist` file in the repository. Use this file as a reference to create your own `Config.plist` file. Replace the placeholder values in your new `Config.plist` file with the actual endpoints of the backend API.
 4. Open and Run the Project in Xcode: Open the `.xcodeproj` file in Xcode.
 
 
