@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EpisodesURL</key>
+	<string>http://placeholder/endpoint</string>
+	<key>PatchNotesURL</key>
+	<string>http://placeholder/endpoint</string>
+	<key>ContentsURL</key>
+	<string>http://placeholder/endpoint</string>
+</dict>
+</plist>

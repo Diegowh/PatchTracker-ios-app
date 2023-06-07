@@ -50,5 +50,5 @@ playground.xcworkspace
 # Pods/
 Podfile.lock
 
-.plist
+Config.plist
 

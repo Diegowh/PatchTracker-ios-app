@@ -10,9 +10,9 @@ import Foundation
 class APIService {
     static let shared = APIService()
     
-    var localhostEpisodesURL: String?
-    var localhostPatchNotesURL: String?
-    var localhostContentsURL: String?
+    var episodesURL: String?
+    var patchNotesURL: String?
+    var contentsURL: String?
     
     init() {
         let memoryCapacity = 500 * 1024 * 1024 // 500 MB
@@ -22,14 +22,14 @@ class APIService {
         
         if let path = Bundle.main.path(forResource: "Config", ofType: "plist"),
            let dict = NSDictionary(contentsOfFile: path) as? [String: AnyObject] {
-            localhostEpisodesURL = dict["localhostEpisodesURL"] as? String
-            localhostPatchNotesURL = dict["localhostPatchNotesURL"] as? String
-            localhostContentsURL = dict["localhostContentsURL"] as? String
+            episodesURL = dict["EpisodesURL"] as? String
+            patchNotesURL = dict["PatchNotesURL"] as? String
+            contentsURL = dict["ContentsURL"] as? String
         }
     }
     
     func fetchEpisodes(completion: @escaping ([Episode]) -> Void) {
-        guard let urlStr = localhostEpisodesURL, let url = URL(string: urlStr) else {
+        guard let urlStr = episodesURL, let url = URL(string: urlStr) else {
             return
         }
         
@@ -49,7 +49,7 @@ class APIService {
     }
     
     func fetchPatchNotes(completion: @escaping ([PatchNote]) -> Void) {
-        guard let urlStr = localhostPatchNotesURL, let url = URL(string: urlStr) else {
+        guard let urlStr = patchNotesURL, let url = URL(string: urlStr) else {
             return
         }
         let request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad)
@@ -68,7 +68,7 @@ class APIService {
     }
     
     func fetchContent(for patchNote: PatchNote, completion: @escaping (Content) -> Void) {
-        guard let urlStr = localhostContentsURL,
+        guard let urlStr = contentsURL,
               let url = URL(string: "\(urlStr)?patch_note=\(patchNote.id)") else {
             return
         }

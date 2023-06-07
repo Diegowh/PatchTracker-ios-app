@@ -19,6 +19,7 @@
 		F15BAEF82A2DF55600294897 /* EpisodeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BAEF72A2DF55600294897 /* EpisodeListView.swift */; };
 		F15BAEFA2A2DF87D00294897 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BAEF92A2DF87D00294897 /* Episode.swift */; };
 		F16D03D02A30ADA1005E2588 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = F16D03CF2A30ADA1005E2588 /* Config.plist */; };
+		F16D03D22A30C145005E2588 /* Config.example.plist in Resources */ = {isa = PBXBuildFile; fileRef = F16D03D12A30C145005E2588 /* Config.example.plist */; };
 		F1EE2F942A2E063B00E5FA40 /* PatchNoteRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EE2F932A2E063B00E5FA40 /* PatchNoteRowView.swift */; };
 		F1EE2F962A2E07B500E5FA40 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EE2F952A2E07B500E5FA40 /* Content.swift */; };
 		F1EE2F982A2E085E00E5FA40 /* PatchNoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EE2F972A2E085E00E5FA40 /* PatchNoteListView.swift */; };
@@ -60,6 +61,7 @@
 		F15BAEF72A2DF55600294897 /* EpisodeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeListView.swift; sourceTree = "<group>"; };
 		F15BAEF92A2DF87D00294897 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		F16D03CF2A30ADA1005E2588 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = SOURCE_ROOT; };
+		F16D03D12A30C145005E2588 /* Config.example.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.example.plist; sourceTree = "<group>"; };
 		F1EE2F932A2E063B00E5FA40 /* PatchNoteRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchNoteRowView.swift; sourceTree = "<group>"; };
 		F1EE2F952A2E07B500E5FA40 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		F1EE2F972A2E085E00E5FA40 /* PatchNoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchNoteListView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				F16D03CF2A30ADA1005E2588 /* Config.plist */,
+				F16D03D12A30C145005E2588 /* Config.example.plist */,
 				F14539E02A2D2E6F008405EC /* PatchTrackerApp */,
 				F14539F12A2D2E70008405EC /* PatchTrackerAppTests */,
 				F14539FB2A2D2E70008405EC /* PatchTrackerAppUITests */,
@@ -298,6 +301,7 @@
 			files = (
 				F14539E92A2D2E70008405EC /* Preview Assets.xcassets in Resources */,
 				F16D03D02A30ADA1005E2588 /* Config.plist in Resources */,
+				F16D03D22A30C145005E2588 /* Config.example.plist in Resources */,
 				F14539E62A2D2E70008405EC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

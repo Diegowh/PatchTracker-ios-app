@@ -2,11 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>localhostContentsURL</key>
+	<key>ContentsURL</key>
 	<string>http://127.0.0.1:8000/ValorantPatchTracker/contents/</string>
-	<key>localhostPatchNotesURL</key>
+	<key>PatchNotesURL</key>
 	<string>http://127.0.0.1:8000/ValorantPatchTracker/patchnotes/</string>
-	<key>localhostEpisodesURL</key>
+	<key>EpisodesURL</key>
 	<string>http://127.0.0.1:8000/ValorantPatchTracker/episodes/</string>
 </dict>
 </plist>
