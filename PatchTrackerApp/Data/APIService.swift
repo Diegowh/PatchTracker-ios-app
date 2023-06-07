@@ -7,22 +7,29 @@
 
 import Foundation
 
-let localhostEpisodesURL = "http://127.0.0.1:8000/ValorantPatchTracker/episodes/"
-let localhostPatchNotesURL = "http://127.0.0.1:8000/ValorantPatchTracker/patchnotes/"
-let localhostContentsURL = "http://127.0.0.1:8000/ValorantPatchTracker/contents/"
-
 class APIService {
     static let shared = APIService()
+    
+    var localhostEpisodesURL: String?
+    var localhostPatchNotesURL: String?
+    var localhostContentsURL: String?
     
     init() {
         let memoryCapacity = 500 * 1024 * 1024 // 500 MB
         let diskCapacity = 500 * 1024 * 1024 // 500 MB
         let urlCache = URLCache(memoryCapacity: memoryCapacity, diskCapacity: diskCapacity, diskPath: nil)
         URLCache.shared = urlCache
+        
+        if let path = Bundle.main.path(forResource: "Config", ofType: "plist"),
+           let dict = NSDictionary(contentsOfFile: path) as? [String: AnyObject] {
+            localhostEpisodesURL = dict["localhostEpisodesURL"] as? String
+            localhostPatchNotesURL = dict["localhostPatchNotesURL"] as? String
+            localhostContentsURL = dict["localhostContentsURL"] as? String
+        }
     }
     
     func fetchEpisodes(completion: @escaping ([Episode]) -> Void) {
-        guard let url = URL(string: localhostEpisodesURL) else {
+        guard let urlStr = localhostEpisodesURL, let url = URL(string: urlStr) else {
             return
         }
         
@@ -40,9 +47,9 @@ class APIService {
             }
         }.resume()
     }
-
+    
     func fetchPatchNotes(completion: @escaping ([PatchNote]) -> Void) {
-        guard let url = URL(string: localhostPatchNotesURL) else {
+        guard let urlStr = localhostPatchNotesURL, let url = URL(string: urlStr) else {
             return
         }
         let request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad)
@@ -61,12 +68,12 @@ class APIService {
     }
     
     func fetchContent(for patchNote: PatchNote, completion: @escaping (Content) -> Void) {
-        let url = URL(string: "\(localhostContentsURL)?patch_note=\(patchNote.id)")
-        
-        guard let unwrappedUrl = url else {
+        guard let urlStr = localhostContentsURL,
+              let url = URL(string: "\(urlStr)?patch_note=\(patchNote.id)") else {
             return
         }
-        let request = URLRequest(url: unwrappedUrl, cachePolicy: .returnCacheDataElseLoad)
+        
+        let request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad)
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let data = data {
                 do {
@@ -83,4 +90,3 @@ class APIService {
         }.resume()
     }
 }
-
