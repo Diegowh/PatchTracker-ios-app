@@ -18,7 +18,6 @@
 		F15BAEF62A2DF2A500294897 /* EpisodeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BAEF52A2DF2A500294897 /* EpisodeRowView.swift */; };
 		F15BAEF82A2DF55600294897 /* EpisodeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BAEF72A2DF55600294897 /* EpisodeListView.swift */; };
 		F15BAEFA2A2DF87D00294897 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BAEF92A2DF87D00294897 /* Episode.swift */; };
-		F16D03CE2A30AA68005E2588 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16D03CD2A30AA68005E2588 /* Test.swift */; };
 		F1EE2F942A2E063B00E5FA40 /* PatchNoteRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EE2F932A2E063B00E5FA40 /* PatchNoteRowView.swift */; };
 		F1EE2F962A2E07B500E5FA40 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EE2F952A2E07B500E5FA40 /* Content.swift */; };
 		F1EE2F982A2E085E00E5FA40 /* PatchNoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EE2F972A2E085E00E5FA40 /* PatchNoteListView.swift */; };
@@ -59,7 +58,6 @@
 		F15BAEF52A2DF2A500294897 /* EpisodeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeRowView.swift; sourceTree = "<group>"; };
 		F15BAEF72A2DF55600294897 /* EpisodeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeListView.swift; sourceTree = "<group>"; };
 		F15BAEF92A2DF87D00294897 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
-		F16D03CD2A30AA68005E2588 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		F1EE2F932A2E063B00E5FA40 /* PatchNoteRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchNoteRowView.swift; sourceTree = "<group>"; };
 		F1EE2F952A2E07B500E5FA40 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		F1EE2F972A2E085E00E5FA40 /* PatchNoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchNoteListView.swift; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 		F14539E02A2D2E6F008405EC /* PatchTrackerApp */ = {
 			isa = PBXGroup;
 			children = (
-				F16D03CD2A30AA68005E2588 /* Test.swift */,
 				F15BAEF22A2DF20E00294897 /* Data */,
 				F15BAEF12A2DF1F100294897 /* Views */,
 				F14539E12A2D2E6F008405EC /* PatchTrackerAppApp.swift */,
@@ -328,7 +325,6 @@
 				F15BAEF62A2DF2A500294897 /* EpisodeRowView.swift in Sources */,
 				F15BAEEC2A2D678400294897 /* ImageView.swift in Sources */,
 				F15BAEF02A2DEFF200294897 /* MainView.swift in Sources */,
-				F16D03CE2A30AA68005E2588 /* Test.swift in Sources */,
 				F1EE2F9A2A2E0B3C00E5FA40 /* ContentView.swift in Sources */,
 				F1EE2F9E2A2E43B000E5FA40 /* PatchNote.swift in Sources */,
 				F15BAEFA2A2DF87D00294897 /* Episode.swift in Sources */,

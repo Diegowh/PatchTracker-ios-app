@@ -22,8 +22,6 @@ class APIService {
     }
     
     func fetchEpisodes(completion: @escaping ([Episode]) -> Void) {
-        printCacheUsage()
-        
         guard let url = URL(string: localhostEpisodesURL) else {
             return
         }
@@ -35,7 +33,6 @@ class APIService {
                     let episodes = try JSONDecoder().decode([Episode].self, from: data)
                     DispatchQueue.main.async {
                         completion(episodes)
-                        printCacheUsage()
                     }
                 } catch let error {
                     print(error)
@@ -64,7 +61,6 @@ class APIService {
     }
     
     func fetchContent(for patchNote: PatchNote, completion: @escaping (Content) -> Void) {
-        printCacheUsage()
         let url = URL(string: "\(localhostContentsURL)?patch_note=\(patchNote.id)")
         
         guard let unwrappedUrl = url else {
@@ -78,7 +74,6 @@ class APIService {
                     if let content = contents.first {
                         DispatchQueue.main.async {
                             completion(content)
-                            printCacheUsage()
                         }
                     }
                 } catch let error {
