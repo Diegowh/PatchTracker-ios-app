@@ -101,4 +101,68 @@ class APIService {
             }
         }.resume()
     }
+    
+    func fetchSeasons(completion: @escaping ([Season]) -> Void) {
+        guard let urlStr = seasonsURL, let url = URL(string: urlStr) else {
+            return
+        }
+        
+        let request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad)
+        URLSession.shared.dataTask(with: request) { (data, response, error) in
+            if let data = data {
+                do {
+                    let patchNotes = try JSONDecoder().decode([Season].self, from: data)
+                    DispatchQueue.main.async {
+                        completion(patchNotes)
+                    }
+                } catch let error {
+                    print(error)
+                }
+            }
+        }.resume()
+    }
+    
+    
+    func fetchPatches(completion: @escaping ([Patch]) -> Void) {
+        guard let urlStr = patchesURL, let url = URL(string: urlStr) else {
+            return
+        }
+        let request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad)
+        URLSession.shared.dataTask(with: request) { (data, response, error) in
+            if let data = data {
+                do {
+                    let patchNotes = try JSONDecoder().decode([Patch].self, from: data)
+                    DispatchQueue.main.async {
+                        completion(patchNotes)
+                    }
+                } catch let error {
+                    print(error)
+                }
+            }
+        }.resume()
+    }
+    
+    
+    func fetchNotes(for note: Note, completion: @escaping (Note) -> Void) {
+        guard let urlStr = notesURL,
+              let url = URL(string: "\(urlStr)?patch=\(patch.id)") else {
+            return
+        }
+        
+        let request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad)
+        URLSession.shared.dataTask(with: request) { (data, response, error) in
+            if let data = data {
+                do {
+                    let contents = try JSONDecoder().decode([Content].self, from: data)
+                    if let content = contents.first {
+                        DispatchQueue.main.async {
+                            completion(content)
+                        }
+                    }
+                } catch let error {
+                    print(error)
+                }
+            }
+        }.resume()
+    }
 }
