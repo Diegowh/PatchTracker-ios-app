@@ -126,6 +126,7 @@
 		F14539E02A2D2E6F008405EC /* PatchTrackerApp */ = {
 			isa = PBXGroup;
 			children = (
+				F1EE2F9B2A2E3EB500E5FA40 /* APIService.swift */,
 				F15BAEEF2A2DEFF200294897 /* MainView.swift */,
 				F14539E12A2D2E6F008405EC /* PatchTrackerAppApp.swift */,
 				F14539E52A2D2E70008405EC /* Assets.xcassets */,
@@ -173,7 +174,6 @@
 		F15BAEF22A2DF20E00294897 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				F1EE2F9B2A2E3EB500E5FA40 /* APIService.swift */,
 				F15BAEF92A2DF87D00294897 /* Episode.swift */,
 				F1EE2F9D2A2E43B000E5FA40 /* PatchNote.swift */,
 				F1EE2F952A2E07B500E5FA40 /* Content.swift */,
@@ -193,7 +193,6 @@
 		F1AA19BE2A35F398004D9103 /* League of Legends */ = {
 			isa = PBXGroup;
 			children = (
-				F1AA19C32A3F71CF004D9103 /* Data */,
 				F1AA19BF2A35F3C8004D9103 /* Views */,
 			);
 			path = "League of Legends";
@@ -206,13 +205,6 @@
 				F1AA19C02A35F550004D9103 /* LoLPlaceholderView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		F1AA19C32A3F71CF004D9103 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		F1EE2F9F2A2E481400E5FA40 /* RowViews */ = {

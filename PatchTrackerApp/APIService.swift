@@ -13,6 +13,9 @@ class APIService {
     var episodesURL: String?
     var patchNotesURL: String?
     var contentsURL: String?
+    var seasonsURL: String?
+    var patchesURL: String?
+    var notesURL: String?
     
     init() {
         let memoryCapacity = 500 * 1024 * 1024 // 500 MB
