@@ -143,8 +143,8 @@ class APIService {
     }
     
     
-    func fetchNotes(for note: Note, completion: @escaping (Note) -> Void) {
-        guard let urlStr = notesURL,
+    func fetchNotes(for patch: Patch, completion: @escaping (Note) -> Void) {
+        guard let urlStr = contentsURL,
               let url = URL(string: "\(urlStr)?patch=\(patch.id)") else {
             return
         }

@@ -5,6 +5,8 @@
 //  Created by Diego García Pérez on 5/6/23.
 //
 
+import Foundation
+
 struct Content: Codable, Hashable {
     var id: Int
     var patch_note: Int

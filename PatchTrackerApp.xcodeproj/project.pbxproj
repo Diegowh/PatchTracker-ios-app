@@ -22,6 +22,9 @@
 		F16D03D22A30C145005E2588 /* Config.example.plist in Resources */ = {isa = PBXBuildFile; fileRef = F16D03D12A30C145005E2588 /* Config.example.plist */; };
 		F1AA19BD2A35F180004D9103 /* LeagueImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA19BC2A35F180004D9103 /* LeagueImageView.swift */; };
 		F1AA19C12A35F550004D9103 /* LoLPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA19C02A35F550004D9103 /* LoLPlaceholderView.swift */; };
+		F1AA19C82A3F7887004D9103 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA19C72A3F7887004D9103 /* Season.swift */; };
+		F1AA19CA2A3F7905004D9103 /* Patch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA19C92A3F7905004D9103 /* Patch.swift */; };
+		F1AA19CC2A3F798A004D9103 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA19CB2A3F798A004D9103 /* Note.swift */; };
 		F1EE2F942A2E063B00E5FA40 /* PatchNoteRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EE2F932A2E063B00E5FA40 /* PatchNoteRowView.swift */; };
 		F1EE2F962A2E07B500E5FA40 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EE2F952A2E07B500E5FA40 /* Content.swift */; };
 		F1EE2F982A2E085E00E5FA40 /* PatchNoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EE2F972A2E085E00E5FA40 /* PatchNoteListView.swift */; };
@@ -66,6 +69,9 @@
 		F16D03D12A30C145005E2588 /* Config.example.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.example.plist; sourceTree = "<group>"; };
 		F1AA19BC2A35F180004D9103 /* LeagueImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueImageView.swift; sourceTree = "<group>"; };
 		F1AA19C02A35F550004D9103 /* LoLPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoLPlaceholderView.swift; sourceTree = "<group>"; };
+		F1AA19C72A3F7887004D9103 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
+		F1AA19C92A3F7905004D9103 /* Patch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patch.swift; sourceTree = "<group>"; };
+		F1AA19CB2A3F798A004D9103 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		F1EE2F932A2E063B00E5FA40 /* PatchNoteRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchNoteRowView.swift; sourceTree = "<group>"; };
 		F1EE2F952A2E07B500E5FA40 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		F1EE2F972A2E085E00E5FA40 /* PatchNoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchNoteListView.swift; sourceTree = "<group>"; };
@@ -193,6 +199,7 @@
 		F1AA19BE2A35F398004D9103 /* League of Legends */ = {
 			isa = PBXGroup;
 			children = (
+				F1AA19C62A3F7807004D9103 /* Data */,
 				F1AA19BF2A35F3C8004D9103 /* Views */,
 			);
 			path = "League of Legends";
@@ -205,6 +212,16 @@
 				F1AA19C02A35F550004D9103 /* LoLPlaceholderView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F1AA19C62A3F7807004D9103 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F1AA19C72A3F7887004D9103 /* Season.swift */,
+				F1AA19C92A3F7905004D9103 /* Patch.swift */,
+				F1AA19CB2A3F798A004D9103 /* Note.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		F1EE2F9F2A2E481400E5FA40 /* RowViews */ = {
@@ -361,9 +378,12 @@
 				F1EE2F942A2E063B00E5FA40 /* PatchNoteRowView.swift in Sources */,
 				F15BAEF82A2DF55600294897 /* EpisodeListView.swift in Sources */,
 				F1EE2F982A2E085E00E5FA40 /* PatchNoteListView.swift in Sources */,
+				F1AA19CC2A3F798A004D9103 /* Note.swift in Sources */,
 				F15BAEF62A2DF2A500294897 /* EpisodeRowView.swift in Sources */,
 				F15BAEEC2A2D678400294897 /* ValorantImageView.swift in Sources */,
+				F1AA19CA2A3F7905004D9103 /* Patch.swift in Sources */,
 				F15BAEF02A2DEFF200294897 /* MainView.swift in Sources */,
+				F1AA19C82A3F7887004D9103 /* Season.swift in Sources */,
 				F1AA19BD2A35F180004D9103 /* LeagueImageView.swift in Sources */,
 				F1EE2F9A2A2E0B3C00E5FA40 /* ContentView.swift in Sources */,
 				F1EE2F9E2A2E43B000E5FA40 /* PatchNote.swift in Sources */,
