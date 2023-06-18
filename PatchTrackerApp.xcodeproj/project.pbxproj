@@ -13,13 +13,15 @@
 		F14539F32A2D2E70008405EC /* PatchTrackerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14539F22A2D2E70008405EC /* PatchTrackerAppTests.swift */; };
 		F14539FD2A2D2E70008405EC /* PatchTrackerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14539FC2A2D2E70008405EC /* PatchTrackerAppUITests.swift */; };
 		F14539FF2A2D2E70008405EC /* PatchTrackerAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14539FE2A2D2E70008405EC /* PatchTrackerAppUITestsLaunchTests.swift */; };
-		F15BAEEC2A2D678400294897 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BAEEB2A2D678400294897 /* ImageView.swift */; };
+		F15BAEEC2A2D678400294897 /* ValorantImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BAEEB2A2D678400294897 /* ValorantImageView.swift */; };
 		F15BAEF02A2DEFF200294897 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BAEEF2A2DEFF200294897 /* MainView.swift */; };
 		F15BAEF62A2DF2A500294897 /* EpisodeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BAEF52A2DF2A500294897 /* EpisodeRowView.swift */; };
 		F15BAEF82A2DF55600294897 /* EpisodeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BAEF72A2DF55600294897 /* EpisodeListView.swift */; };
 		F15BAEFA2A2DF87D00294897 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BAEF92A2DF87D00294897 /* Episode.swift */; };
 		F16D03D02A30ADA1005E2588 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = F16D03CF2A30ADA1005E2588 /* Config.plist */; };
 		F16D03D22A30C145005E2588 /* Config.example.plist in Resources */ = {isa = PBXBuildFile; fileRef = F16D03D12A30C145005E2588 /* Config.example.plist */; };
+		F1AA19BD2A35F180004D9103 /* LeagueImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA19BC2A35F180004D9103 /* LeagueImageView.swift */; };
+		F1AA19C12A35F550004D9103 /* LoLPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA19C02A35F550004D9103 /* LoLPlaceholderView.swift */; };
 		F1EE2F942A2E063B00E5FA40 /* PatchNoteRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EE2F932A2E063B00E5FA40 /* PatchNoteRowView.swift */; };
 		F1EE2F962A2E07B500E5FA40 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EE2F952A2E07B500E5FA40 /* Content.swift */; };
 		F1EE2F982A2E085E00E5FA40 /* PatchNoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EE2F972A2E085E00E5FA40 /* PatchNoteListView.swift */; };
@@ -55,13 +57,15 @@
 		F14539F82A2D2E70008405EC /* PatchTrackerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatchTrackerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14539FC2A2D2E70008405EC /* PatchTrackerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchTrackerAppUITests.swift; sourceTree = "<group>"; };
 		F14539FE2A2D2E70008405EC /* PatchTrackerAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchTrackerAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		F15BAEEB2A2D678400294897 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		F15BAEEB2A2D678400294897 /* ValorantImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorantImageView.swift; sourceTree = "<group>"; };
 		F15BAEEF2A2DEFF200294897 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F15BAEF52A2DF2A500294897 /* EpisodeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeRowView.swift; sourceTree = "<group>"; };
 		F15BAEF72A2DF55600294897 /* EpisodeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeListView.swift; sourceTree = "<group>"; };
 		F15BAEF92A2DF87D00294897 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		F16D03CF2A30ADA1005E2588 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = SOURCE_ROOT; };
 		F16D03D12A30C145005E2588 /* Config.example.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.example.plist; sourceTree = "<group>"; };
+		F1AA19BC2A35F180004D9103 /* LeagueImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueImageView.swift; sourceTree = "<group>"; };
+		F1AA19C02A35F550004D9103 /* LoLPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoLPlaceholderView.swift; sourceTree = "<group>"; };
 		F1EE2F932A2E063B00E5FA40 /* PatchNoteRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchNoteRowView.swift; sourceTree = "<group>"; };
 		F1EE2F952A2E07B500E5FA40 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		F1EE2F972A2E085E00E5FA40 /* PatchNoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchNoteListView.swift; sourceTree = "<group>"; };
@@ -98,9 +102,11 @@
 		F14539D52A2D2E6F008405EC = {
 			isa = PBXGroup;
 			children = (
+				F14539E02A2D2E6F008405EC /* PatchTrackerApp */,
+				F1AA19BB2A35F093004D9103 /* Valorant */,
+				F1AA19BE2A35F398004D9103 /* League of Legends */,
 				F16D03CF2A30ADA1005E2588 /* Config.plist */,
 				F16D03D12A30C145005E2588 /* Config.example.plist */,
-				F14539E02A2D2E6F008405EC /* PatchTrackerApp */,
 				F14539F12A2D2E70008405EC /* PatchTrackerAppTests */,
 				F14539FB2A2D2E70008405EC /* PatchTrackerAppUITests */,
 				F14539DF2A2D2E6F008405EC /* Products */,
@@ -120,8 +126,7 @@
 		F14539E02A2D2E6F008405EC /* PatchTrackerApp */ = {
 			isa = PBXGroup;
 			children = (
-				F15BAEF22A2DF20E00294897 /* Data */,
-				F15BAEF12A2DF1F100294897 /* Views */,
+				F15BAEEF2A2DEFF200294897 /* MainView.swift */,
 				F14539E12A2D2E6F008405EC /* PatchTrackerAppApp.swift */,
 				F14539E52A2D2E70008405EC /* Assets.xcassets */,
 				F14539E72A2D2E70008405EC /* Preview Content */,
@@ -159,8 +164,7 @@
 			children = (
 				F1EE2F9F2A2E481400E5FA40 /* RowViews */,
 				F1EE2FA02A2E482A00E5FA40 /* ListViews */,
-				F15BAEEF2A2DEFF200294897 /* MainView.swift */,
-				F15BAEEB2A2D678400294897 /* ImageView.swift */,
+				F15BAEEB2A2D678400294897 /* ValorantImageView.swift */,
 				F1EE2F992A2E0B3C00E5FA40 /* ContentView.swift */,
 			);
 			path = Views;
@@ -173,6 +177,40 @@
 				F15BAEF92A2DF87D00294897 /* Episode.swift */,
 				F1EE2F9D2A2E43B000E5FA40 /* PatchNote.swift */,
 				F1EE2F952A2E07B500E5FA40 /* Content.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F1AA19BB2A35F093004D9103 /* Valorant */ = {
+			isa = PBXGroup;
+			children = (
+				F15BAEF12A2DF1F100294897 /* Views */,
+				F15BAEF22A2DF20E00294897 /* Data */,
+			);
+			path = Valorant;
+			sourceTree = "<group>";
+		};
+		F1AA19BE2A35F398004D9103 /* League of Legends */ = {
+			isa = PBXGroup;
+			children = (
+				F1AA19C32A3F71CF004D9103 /* Data */,
+				F1AA19BF2A35F3C8004D9103 /* Views */,
+			);
+			path = "League of Legends";
+			sourceTree = "<group>";
+		};
+		F1AA19BF2A35F3C8004D9103 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1AA19BC2A35F180004D9103 /* LeagueImageView.swift */,
+				F1AA19C02A35F550004D9103 /* LoLPlaceholderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F1AA19C32A3F71CF004D9103 /* Data */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -327,12 +365,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1AA19C12A35F550004D9103 /* LoLPlaceholderView.swift in Sources */,
 				F1EE2F942A2E063B00E5FA40 /* PatchNoteRowView.swift in Sources */,
 				F15BAEF82A2DF55600294897 /* EpisodeListView.swift in Sources */,
 				F1EE2F982A2E085E00E5FA40 /* PatchNoteListView.swift in Sources */,
 				F15BAEF62A2DF2A500294897 /* EpisodeRowView.swift in Sources */,
-				F15BAEEC2A2D678400294897 /* ImageView.swift in Sources */,
+				F15BAEEC2A2D678400294897 /* ValorantImageView.swift in Sources */,
 				F15BAEF02A2DEFF200294897 /* MainView.swift in Sources */,
+				F1AA19BD2A35F180004D9103 /* LeagueImageView.swift in Sources */,
 				F1EE2F9A2A2E0B3C00E5FA40 /* ContentView.swift in Sources */,
 				F1EE2F9E2A2E43B000E5FA40 /* PatchNote.swift in Sources */,
 				F15BAEFA2A2DF87D00294897 /* Episode.swift in Sources */,

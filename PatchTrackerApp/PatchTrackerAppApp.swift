@@ -11,7 +11,21 @@ import SwiftUI
 struct PatchTrackerAppApp: App {
     var body: some Scene {
         WindowGroup {
-            EpisodeListView()
+            
+            TabView {
+                MainView()
+                    .tabItem() {
+                        Image(systemName: "house.circle")
+                    }
+                EpisodeListView()
+                    .tabItem {
+                        Image(systemName: "v.circle")
+                    }
+                LoLPlaceholderView()
+                    .tabItem {
+                        Image(systemName: "l.circle")
+                    }
+            }
         }
     }
 }

@@ -6,6 +6,12 @@
 	<string>http://placeholder/endpoint</string>
 	<key>PatchNotesURL</key>
 	<string>http://placeholder/endpoint</string>
+	<key>SeasonsURL</key>
+	<string>http://placeholder/endpoint</string>
+	<key>PatchesURL</key>
+	<string>http://placeholder/endpoint</string>
+	<key>NotesURL</key>
+	<string>http://placeholder/endpoint</string>
 	<key>ContentsURL</key>
 	<string>http://placeholder/endpoint</string>
 </dict>

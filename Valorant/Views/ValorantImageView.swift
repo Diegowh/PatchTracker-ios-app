@@ -7,30 +7,24 @@
 
 import SwiftUI
 
-struct imageView: View {
+struct ValorantImageView: View {
     var body: some View {
-        NavigationView {
-            ZStack {
-                Color(red: 1.0, green: 0.3, blue: 0.3)
-                    .edgesIgnoringSafeArea(.all)
-
                 NavigationLink(destination: EpisodeListView()) {
                         Image("valorant-logo")
                             .resizable()
                             .scaledToFill()
                             .scaledToFit()
+                            .frame(width: 150, height: 150)
                             .padding()
                             .background(Color(red: 1.0, green: 0.5, blue: 0.5))
                             .clipShape(Circle())
                             .shadow(radius: 10)
                     }.padding(.horizontal)
                 }
-        }
-        }
     }
 
-struct imageView_Previews: PreviewProvider {
+struct ValorantImageView_Previews: PreviewProvider {
     static var previews: some View {
-        imageView()
+        ValorantImageView()
     }
 }
