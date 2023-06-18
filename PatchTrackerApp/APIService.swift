@@ -10,9 +10,12 @@ import Foundation
 class APIService {
     static let shared = APIService()
     
+    // Valorant
     var episodesURL: String?
     var patchNotesURL: String?
     var contentsURL: String?
+    
+    // LoL
     var seasonsURL: String?
     var patchesURL: String?
     var notesURL: String?
@@ -25,9 +28,15 @@ class APIService {
         
         if let path = Bundle.main.path(forResource: "Config", ofType: "plist"),
            let dict = NSDictionary(contentsOfFile: path) as? [String: AnyObject] {
+            // Valorant API
             episodesURL = dict["EpisodesURL"] as? String
             patchNotesURL = dict["PatchNotesURL"] as? String
             contentsURL = dict["ContentsURL"] as? String
+            
+            // LoL API
+            seasonsURL = dict["SeasonsURL"] as? String
+            patchesURL = dict["PatchesURL"] as? String
+            notesURL = dict["NotesURL"] as? String
         }
     }
     
