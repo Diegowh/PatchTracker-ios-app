@@ -111,9 +111,9 @@ class APIService {
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let data = data {
                 do {
-                    let patchNotes = try JSONDecoder().decode([Season].self, from: data)
+                    let seasons = try JSONDecoder().decode([Season].self, from: data)
                     DispatchQueue.main.async {
-                        completion(patchNotes)
+                        completion(seasons)
                     }
                 } catch let error {
                     print(error)
@@ -131,9 +131,9 @@ class APIService {
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let data = data {
                 do {
-                    let patchNotes = try JSONDecoder().decode([Patch].self, from: data)
+                    let patches = try JSONDecoder().decode([Patch].self, from: data)
                     DispatchQueue.main.async {
-                        completion(patchNotes)
+                        completion(patches)
                     }
                 } catch let error {
                     print(error)
@@ -144,7 +144,7 @@ class APIService {
     
     
     func fetchNotes(for patch: Patch, completion: @escaping (Note) -> Void) {
-        guard let urlStr = contentsURL,
+        guard let urlStr = notesURL,
               let url = URL(string: "\(urlStr)?patch=\(patch.id)") else {
             return
         }
@@ -153,10 +153,10 @@ class APIService {
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let data = data {
                 do {
-                    let contents = try JSONDecoder().decode([Content].self, from: data)
-                    if let content = contents.first {
+                    let notes = try JSONDecoder().decode([Note].self, from: data)
+                    if let note = notes.first {
                         DispatchQueue.main.async {
-                            completion(content)
+                            completion(note)
                         }
                     }
                 } catch let error {

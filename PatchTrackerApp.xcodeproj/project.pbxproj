@@ -25,6 +25,8 @@
 		F1AA19C82A3F7887004D9103 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA19C72A3F7887004D9103 /* Season.swift */; };
 		F1AA19CA2A3F7905004D9103 /* Patch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA19C92A3F7905004D9103 /* Patch.swift */; };
 		F1AA19CC2A3F798A004D9103 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA19CB2A3F798A004D9103 /* Note.swift */; };
+		F1AA19CF2A4074E6004D9103 /* SeasonRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA19CE2A4074E6004D9103 /* SeasonRowView.swift */; };
+		F1AA19D12A407587004D9103 /* PatchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA19D02A407587004D9103 /* PatchRowView.swift */; };
 		F1EE2F942A2E063B00E5FA40 /* PatchNoteRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EE2F932A2E063B00E5FA40 /* PatchNoteRowView.swift */; };
 		F1EE2F962A2E07B500E5FA40 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EE2F952A2E07B500E5FA40 /* Content.swift */; };
 		F1EE2F982A2E085E00E5FA40 /* PatchNoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EE2F972A2E085E00E5FA40 /* PatchNoteListView.swift */; };
@@ -72,6 +74,8 @@
 		F1AA19C72A3F7887004D9103 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
 		F1AA19C92A3F7905004D9103 /* Patch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patch.swift; sourceTree = "<group>"; };
 		F1AA19CB2A3F798A004D9103 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		F1AA19CE2A4074E6004D9103 /* SeasonRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonRowView.swift; sourceTree = "<group>"; };
+		F1AA19D02A407587004D9103 /* PatchRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchRowView.swift; sourceTree = "<group>"; };
 		F1EE2F932A2E063B00E5FA40 /* PatchNoteRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchNoteRowView.swift; sourceTree = "<group>"; };
 		F1EE2F952A2E07B500E5FA40 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		F1EE2F972A2E085E00E5FA40 /* PatchNoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchNoteListView.swift; sourceTree = "<group>"; };
@@ -199,8 +203,8 @@
 		F1AA19BE2A35F398004D9103 /* League of Legends */ = {
 			isa = PBXGroup;
 			children = (
-				F1AA19C62A3F7807004D9103 /* Data */,
 				F1AA19BF2A35F3C8004D9103 /* Views */,
+				F1AA19C62A3F7807004D9103 /* Data */,
 			);
 			path = "League of Legends";
 			sourceTree = "<group>";
@@ -208,6 +212,7 @@
 		F1AA19BF2A35F3C8004D9103 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F1AA19CD2A4074D4004D9103 /* RowViews */,
 				F1AA19BC2A35F180004D9103 /* LeagueImageView.swift */,
 				F1AA19C02A35F550004D9103 /* LoLPlaceholderView.swift */,
 			);
@@ -222,6 +227,15 @@
 				F1AA19CB2A3F798A004D9103 /* Note.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		F1AA19CD2A4074D4004D9103 /* RowViews */ = {
+			isa = PBXGroup;
+			children = (
+				F1AA19CE2A4074E6004D9103 /* SeasonRowView.swift */,
+				F1AA19D02A407587004D9103 /* PatchRowView.swift */,
+			);
+			path = RowViews;
 			sourceTree = "<group>";
 		};
 		F1EE2F9F2A2E481400E5FA40 /* RowViews */ = {
@@ -383,7 +397,9 @@
 				F15BAEEC2A2D678400294897 /* ValorantImageView.swift in Sources */,
 				F1AA19CA2A3F7905004D9103 /* Patch.swift in Sources */,
 				F15BAEF02A2DEFF200294897 /* MainView.swift in Sources */,
+				F1AA19D12A407587004D9103 /* PatchRowView.swift in Sources */,
 				F1AA19C82A3F7887004D9103 /* Season.swift in Sources */,
+				F1AA19CF2A4074E6004D9103 /* SeasonRowView.swift in Sources */,
 				F1AA19BD2A35F180004D9103 /* LeagueImageView.swift in Sources */,
 				F1EE2F9A2A2E0B3C00E5FA40 /* ContentView.swift in Sources */,
 				F1EE2F9E2A2E43B000E5FA40 /* PatchNote.swift in Sources */,
