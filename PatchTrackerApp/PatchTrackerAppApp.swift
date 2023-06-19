@@ -21,7 +21,7 @@ struct PatchTrackerAppApp: App {
                     .tabItem {
                         Image(systemName: "v.circle")
                     }
-                LoLPlaceholderView()
+                SeasonListView()
                     .tabItem {
                         Image(systemName: "l.circle")
                     }
