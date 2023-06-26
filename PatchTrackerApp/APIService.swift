@@ -21,10 +21,10 @@ class APIService {
     var notesURL: String?
     
     init() {
-        let memoryCapacity = 500 * 1024 * 1024 // 500 MB
-        let diskCapacity = 500 * 1024 * 1024 // 500 MB
-        let urlCache = URLCache(memoryCapacity: memoryCapacity, diskCapacity: diskCapacity, diskPath: nil)
-        URLCache.shared = urlCache
+        //let memoryCapacity = 500 * 1024 * 1024 // 500 MB
+        //let diskCapacity = 500 * 1024 * 1024 // 500 MB
+        //let urlCache = URLCache(memoryCapacity: memoryCapacity, diskCapacity: diskCapacity, diskPath: nil)
+        //URLCache.shared = urlCache
         
         if let path = Bundle.main.path(forResource: "Config", ofType: "plist"),
            let dict = NSDictionary(contentsOfFile: path) as? [String: AnyObject] {
@@ -45,7 +45,7 @@ class APIService {
             return
         }
         
-        let request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad)
+        let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData)
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let data = data {
                 do {
@@ -64,7 +64,7 @@ class APIService {
         guard let urlStr = patchNotesURL, let url = URL(string: urlStr) else {
             return
         }
-        let request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad)
+        let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData)
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let data = data {
                 do {
@@ -85,7 +85,7 @@ class APIService {
             return
         }
         
-        let request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad)
+        let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData)
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let data = data {
                 do {
@@ -107,7 +107,7 @@ class APIService {
             return
         }
         
-        let request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad)
+        let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData)
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let data = data {
                 do {
@@ -127,7 +127,7 @@ class APIService {
         guard let urlStr = patchesURL, let url = URL(string: urlStr) else {
             return
         }
-        let request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad)
+        let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData)
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let data = data {
                 do {
@@ -149,7 +149,7 @@ class APIService {
             return
         }
         
-        let request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad)
+        let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData)
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let data = data {
                 do {
